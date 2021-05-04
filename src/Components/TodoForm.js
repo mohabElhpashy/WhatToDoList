@@ -10,6 +10,7 @@ filtere(name)
     return (
         <Fragment>
             <input value={filtername}
+            placeholder="Filter Name"
             onChange={Filter}
             />
         </Fragment>

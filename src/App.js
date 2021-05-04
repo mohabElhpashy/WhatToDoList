@@ -9,8 +9,14 @@ function App() {
 
 const test=(e)=>{
   e.preventDefault()
-  setstate([...state,{text:input,id:Math.floor(Math.random()*10000)}])
-  setinput('')}
+  if(input===""){
+    alert("label is empty")
+  }
+  else{
+    setstate([...state,{text:input,id:Math.floor(Math.random()*10000)}])
+  setinput('')
+  }
+  }
 
   const DeleteHandelleer=(e,handel)=>{
     const handleDelete=state.filter((el,inedx)=>inedx!==handel )
